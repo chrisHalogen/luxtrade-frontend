@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place Buy Order</title>
+    <link rel="stylesheet" href="assets/font-awesome/css/all.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+    <div class="dashboard-wrapper">
+
+        <div class="mobile-menu-div">
+            <img src="/assets/media/logo-edited.png" alt="...">
+            <i class="fa-solid fa-bars" id="menu-toggle-icon"></i>
+        </div>
+
+        <div class="navbar-container" id="navbar-wrapper">
+            <!-- <div class="mobile-menu-div">
+                <img src="/assets/media/logo-edited.png" alt="...">
+                <i class="fa-solid fa-bars"></i>
+            </div> -->
+
+            <div class="nav-bar">
+
+                <div class="cancel-icon-wrapper">
+                    <i class="fa-solid fa-xmark" id="mobile-menu-cancel-icon"></i>
+                </div>
+
+                <div class="img-wrapper">
+                    <img src="./assets/media/logo-edited.png" alt="...">
+    
+                </div>
+    
+                <div class="navigation-menu">
+                    <ul>
+                        <li>
+                            <a href="./dashboard.html" >
+                                <i class="fa-solid fa-house-user">
+                                </i><span>Overview</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./rates.html" >
+                                <i class="fa-solid fa-chart-bar"></i>
+                                </i><span>Today Rates</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href=".sell.html" class="active-link">
+                                <i class="fa-solid fa-tags"></i>
+                                </i><span>Sell To Us</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./buy.html" >
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                </i><span>Buy From Us</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./history.html" >
+                                <i class="fa-solid fa-clock-rotate-left"></i>
+                                </i><span>History</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./announcements.html">
+                                <i class="fa-solid fa-bullhorn"></i>
+                                </i><span>Announcements</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./settings.html">
+                                <i class="fa-solid fa-gear"></i>
+                                </i><span>Settings</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./support.html">
+                                <i class="fa-solid fa-gear"></i>
+                                </i><span>Support</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-solid fa-power-off"></i>
+                                </i><span>Logout</span>
+                            </a>
+                        </li>
+                        
+                        
+                    </ul>
+                </div>
+    
+            </div>
+
+        </div>
+        
+
+        <div class="content-area">
+
+            <div class="inner-content-area">
+                <h1 class="tab-title">Place a Sell Order</h1>
+
+                <div class="order-wrapper">
+                   <form action="" id="order-form">
+                    <h2>Asset Details</h2>
+                    <hr class="section-divider">
+                    <div class="form-group">
+                        <!-- <label for="asset-type">Asset Type</label> -->
+                        <p class="label-paragraph">Asset Type</p>
+                        <div class="asset-radio-buttons">
+                            <label>
+                                <input class="asset-btn-1" name="asset-type" type="radio" value="1"> eCurrency
+                            </label>
+                            <br>
+                            <br>
+                            <label>
+                                <input class="asset-btn-2" name="asset-type" type="radio" value="2"> Crypto Currency
+                            </label>
+                            <p class="description">What type of asset do you want to sell?</p>
+
+                        </div>
+                    </div>
+                    <div class="form-group" style="align-items: center;">
+                        <!-- <label for="asset-type">Asset Type</label> -->
+                        <p class="label-paragraph">Select Asset</p>
+
+                        <div>
+                            <select name="selected-asset" id="selected-asset">
+                                <option value="1">Bitcoin | BTC</option>
+                                <option value="2">Ethereum | ETH</option>
+                                <option value="3">Payoneer | PNR</option>
+                            </select>
+                            <p class="description">Select the asset to sell</p>
+                        </div>
+
+                        
+
+                    </div>
+
+                    <h2>Amount</h2>
+                    <hr class="section-divider">
+                    <div class="form-group" style="align-items: center;">
+                        <p class="label-paragraph">Quantity</p>
+
+                        <div>
+                            <input type="text" name="quantity" id="quantity">
+                            <p class="description">What quantity do you want to purchase?</p>
+                        </div>
+                        
+
+                    </div>
+
+                    <div class="form-group" style="align-items: center;">
+                        <p class="label-paragraph">Fee</p>
+
+                        <div>
+                            <p class="label-paragraph">0</p>
+                            <p class="description">Exchange Rate - 340</p>
+                        </div>
+                    </div>
+
+                    <h2>Payment</h2>
+                    <hr class="section-divider">
+                    <div class="form-group" >
+                        <p class="label-paragraph">Sending Instructions</p>
+
+                        <div>
+                            <textarea name="" id="" cols="80" rows="5" disabled>Send to this wallet address - yegjuyrfuierkgiecrguefguegfyuge</textarea>
+                            <p class="description">Follow this instructions to send us credit</p>
+                        </div>
+
+                    </div>
+
+                    <div class="form-group" >
+                        <p class="label-paragraph">Proof of payment</p>
+
+                        <div>
+                            <div class="proof-upload">
+                                <button>Upload Image</button>
+                                <button>Delete Image</button>
+                            </div>
+                            <p class="description">Upload a screenshot of proof of credit sent</p>
+                        </div>
+
+                    </div>
+
+                    <input type="submit" name="submit" value="Place My Order">
+
+                   </form>
+                    
+                </div>
+
+                
+            </div>
+            <!-- End of History content area -->
+        </div> 
+
+    </div>
+
+    <script>
+        let menu_btn = document.getElementById('menu-toggle-icon');
+        menu_btn.addEventListener('click', function(){
+            
+            let menu_wrapper = document.getElementById('navbar-wrapper');
+            menu_wrapper.style.left = '0';
+        })
+
+        let times_btn = document.getElementById('mobile-menu-cancel-icon');
+        times_btn.addEventListener('click', function(){
+            
+            let menu_wrapper = document.getElementById('navbar-wrapper');
+            menu_wrapper.style.left = '-275px';
+        })
+    </script>
+    
+</body>
+</html>
